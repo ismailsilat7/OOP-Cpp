@@ -45,7 +45,7 @@ class University {
             }
         }
         void displayProfessors() {
-            if (numProfessors < 0) {
+            if (numProfessors == 0) {
                 cout << "No professors in university " << name << endl;
                 return;
             }
