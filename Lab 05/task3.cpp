@@ -71,6 +71,7 @@ class University {
             }
             if(!found) {
                 cout << "Department of professor " << newProfessor->getName() << " doesn't match with any in univeristy " << name << ", Cannot add!" << endl;
+                return;
             }
             Professor** tempProfessors = new Professor*[numProfessors + 1];
             for (int i = 0; i < numProfessors; i++){
@@ -96,7 +97,7 @@ class University {
                 }
             }
             if(!found) {
-                cout << "Professor with ID " << ID << " not found." << endl;
+                cout << "Professor with ID " << ID << " not found.. Cannot delete!" << endl;
                 return;
             }
             Professor** tempProfessors = new Professor*[numProfessors - 1];
@@ -109,6 +110,10 @@ class University {
             delete[] professors;
             professors = tempProfessors;
             numProfessors--;
+        }
+        ~University() {
+            delete[] professors;
+            delete[] departments;
         }
 };
 
@@ -147,6 +152,15 @@ int main() {
     cout << "DIsplaying professors after transfer of one..." << endl;
     fast.displayProfessors();
     iba.displayProfessors();
+    
+    delete atif;
+    delete talha;
+    delete sarah;
+    delete usman;
+    delete hina;
+    delete ali;
+    delete zara;
+    delete bilal;
     
     return 0;
 }
