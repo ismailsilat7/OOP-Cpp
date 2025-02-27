@@ -80,7 +80,9 @@ class TravelAgency {
             }
             cout << endl;
         }
-
+        ~TravelAgency() {
+            delete[] tourGuides;
+        }
 };
 
 int main() {
