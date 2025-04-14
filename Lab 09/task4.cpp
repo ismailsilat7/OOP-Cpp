@@ -24,7 +24,7 @@ class CreditCard : public PaymentMethod {
 
 };
 
-class DebitCard : public PaymentMethod {
+class DebitCard : public PaymentMethod { // debit card = digital wallet
 
     private:
         double balance;
