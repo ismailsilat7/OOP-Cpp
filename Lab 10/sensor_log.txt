@@ -1,0 +1,7 @@
+Sensor 1: 25.5 C
+Sensor 2: 98.1 %RH
+Sensor 3: 85 kWH
+Sensor 4: 20 V
+Sensor 5: 75 C
+Sensor 6: 80 %RH
+Sensor 7: 45 W
